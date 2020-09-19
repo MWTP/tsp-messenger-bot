@@ -16,14 +16,11 @@ client.on('message', message => {
     if (command === 'embed') {
 		const embed = new Discord.MessageEmbed()
 		.setColor(0x79E621)
-		// .setTitle('Title')
 		.setDescription(args.join(" "))
 		.setAuthor('TSP Messenger', 'https://i.ibb.co/K9NSjHf/speech-balloon-green-m-icon.png')
 		.setThumbnail('https://i.ibb.co/K9NSjHf/speech-balloon-green-m-icon.png')
         message.channel.send(embed);
 	}
 });
-
-// https://i.ibb.co/NSqWPZ1/tspyellow2stroke.png
 
 client.login(token);
