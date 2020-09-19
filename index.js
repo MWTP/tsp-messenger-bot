@@ -14,13 +14,6 @@ client.on('message', message => {
 	const command = args.shift().toLowerCase();
 
     if (command === 'embed') {
-		// let taggedChannel = message.mentions.channels.first();
-		// let specifiedchannel = message.guild.channels.find(t => t.id == taggedChannel.id);
-		// console.log ("The announcement was sent to " + specifiedchannel);
-		// if(!specifiedchannel) return message.channel.send("That channel does not exist!");
-		// message.delete().catch(O_o=>{});
-		// specifiedchannel.send(embed);
-		// console.log (message.author.username + " executed an Announcement in the channel #" + message.channel.name);
 		const embed = new Discord.MessageEmbed()
 		.setColor(0x79E621)
 		.setDescription(args.join(" "))
